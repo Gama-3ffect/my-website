@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <nav>
+        <header>
+            <h1 style="color:#f09d03;">Weather</h1>
+            <h1 style="color:white;">Update</h1>
+        </header>
+    </nav>
+    <main>
+        <div id="loader" class="loader"></div>
+        <section class="weather-info">
+            <div class="main-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Enter city name" autocomplete>
+                    <button id="search-btn"><span class="material-symbols-outlined">
+                            search
+                        </span></button>
+                </div>
+                <div class="weather-details">
+                    <h2>Lusaka</h2>
+                    <img src="">
+                    <div style="font-size: 15px;">22ºC</div>
+                    <h4>light rain</h4>
+                    <div class="col">
+                        <div class="humidity">
+                            <img src="">
+                            <h3>Humidity: 22%</h3>
+                        </div>
+                        <div class="speed">
+                            <img src="">
+                            <h3>Wind Speed: 22km/h</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="forecast">
+            <div>
+                <h2 style="color: white;">Forecast</h2>
+            </div>
+            <div class="forecast-container">
+                <div class="forecast-item">
+                    <h3>24 Nov</h3>
+                    <img src="">
+                    <div class="temp">22ºC
+                    </div>
+                    <h4>light rain</h4>
+                </div>
+                <div class="forecast-item">
+                    <h3>24 Nov</h3>
+                    <img src="">
+                    <div class="temp">22ºC</div>
+                    <h4>light rain</h4>
+                </div>
+                <div class="forecast-item">
+                    <h3>24 Nov</h3>
+                    <img src="">
+                    <div class="temp">22ºC</div>
+                    <h4>light rain</h4>
+                </div>
+                <div class="forecast-item">
+                    <h3>24 Nov</h3>
+                    <img src="">
+                    <div class="temp">22ºC</div>
+                    <h4>light rain</h4>
+                </div>
+                <div class="forecast-item">
+                    <h3>24 Nov</h3>
+                    <img src="">
+                    <div class="temp">22C</div>
+                    <h4>light rain</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <ul>
+                <li>SIN: 2310803736</li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <ul>
+                <li>Cell: +2609767975305 +260772912666</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; Developed by <b>Charles Gama</b>
+            </p>
+        </div>
+    </footer>
+
+    <div id="custom-popup" class="popup hidden">
+        <div class="popup-content">
+            <span id="popup-close">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-text"></p>
+            <button id="popup-ok">OK</button>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
